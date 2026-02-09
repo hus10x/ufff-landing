@@ -85,15 +85,21 @@ function SectionHeading({
   )
 }
 
-function BrandMark({ className }: { className?: string }) {
+function BrandMark({
+  className,
+  size = 24,
+}: {
+  className?: string
+  size?: number
+}) {
   return (
     <img
       src="/web-logo.svg"
       alt=""
       aria-hidden="true"
-      className={cn("w-auto", className)}
-      width={24}
-      height={24}
+      className={cn("block", className)}
+      width={size}
+      height={size}
       draggable={false}
     />
   )
@@ -296,9 +302,7 @@ function Hero() {
                 willChange: "transform",
               }}
             >
-              <div className="bg-primary text-white text-xl font-bold p-4 h-20 w-20 flex items-center justify-center rounded-3xl mx-auto shadow-md">
-                <BrandMark className="h-[40px]" />
-              </div>
+              <BrandMark className="h-20 w-20 mx-auto" size={80} />
             </motion.div>
 
             <motion.div
