@@ -13,7 +13,6 @@ import {
 import {
   ArrowLeft,
   ArrowRight,
-  Calendar,
   Check,
   ChevronDown,
   ChevronRight,
@@ -88,11 +87,14 @@ function SectionHeading({
 
 function BrandMark({ className }: { className?: string }) {
   return (
-    <Calendar
+    <img
+      src="/web-logo.svg"
+      alt=""
+      aria-hidden="true"
       className={cn("w-auto", className)}
       width={24}
       height={24}
-      aria-hidden="true"
+      draggable={false}
     />
   )
 }
