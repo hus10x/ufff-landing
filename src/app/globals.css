@@ -51,8 +51,7 @@
   --radius: 0.5rem;
   --max-container-width: 1200px;
 
-  /* #f4f4f4 */
-  --background: oklch(96% 0 0);
+  --background: #f4f4f4;
   --foreground: oklch(11.439% 0.0069 261.028);
 
   --card: oklch(100% 0 0);
